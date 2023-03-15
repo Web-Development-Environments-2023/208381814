@@ -5,3 +5,55 @@
 	height: 35px;
 	background: white;
 }
+
+/* <style>
+body {
+	background-image: url("background.jpg");
+  }
+  </style>
+  <body> */
+
+li {
+	display: inline;
+	float: left;
+	border-right: 1px solid #f0f0f0;
+  }
+
+  p {
+	font-family: Tahoma, Verdana, sans-serif;
+	}
+
+	p.dotted {border-style: dotted;}
+
+	h1 {text-align: center;}
+
+  a {
+	display: block;
+	padding: 8px;
+	background-color: #DC143C;
+  }
+
+  ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #DC143C;
+  }
+
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  li a:hover {
+	background-color: #111;
+  }
+
+  .active {
+	background-color: #DC143C;
+  }
