@@ -3,6 +3,12 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+<link rel="stylesheet" href="css/emojionearea.min.css">
+<script 
+src="https://code.jquery.com/jquery-3.6.4.min.js" 
+integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+crossorigin="anonymous"></script>
+<script src="js/emojionearea.min.js"></script>
 <body>
 <div id="menu">
 <li><a href="#about"> About Me</a></li>
@@ -122,6 +128,9 @@
 <br/>
 <h1> <p class="dotted">Give Me A Like</p> </h1>
 <br/>
+אהבתם את העמוד שלי? אשמח שתעשו לי לייק
+<br/>
+<br/>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v16.0" nonce="km8kdUIv"></script>
 <br/>
@@ -174,6 +183,7 @@
 <br/>
 </section>
 
+
 <section id="contact" class="section">
 <br/>
 <br/>
@@ -183,39 +193,46 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h1> <p class="dotted">Contact Me</p> </h1>
-<br/>
-<form action="/action_page.php">
-  <p><label for="fname">First name:</label><br></p>
-  <p><input type="text" id="fname" name="fname" value="please enter your first name"><br></p>
-  <p><label for="lname">Last name:</label><br></p>
-  <p><input type="text" id="lname" name="lname" value="please enter your last name"><br><br></p>
-  <p><input type="submit" value="Submit"></p>
-</form> 
+<section id="contact" class="section">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <h1> <p class="dotted">Contact Me</p> </h1>
+  <br/>
+  <br/>
+  <br/>
+  
+  <form action="mailto:edenluzon5@gmail.com" method="post" enctype="text/plain">
+    Name:<br>
+    <p><input type="text" name="name" value="please enter your first name"><br></form></p>
+    E-mail:<br>
+    <input type="text" name="mail"><br>
+    Comment:<br>
+    <input type="text" name="comment" size="50"><br><br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+    </form>
+  </section>
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-<br/>
-<br/>
 
-<form action="mailto:edenluzon5@gmail.com" method="post" enctype="text/plain">
-  Name:<br>
-  <input type="text" name="name"><br>
-  E-mail:<br>
-  <input type="text" name="mail"><br>
-  Comment:<br>
-  <input type="text" name="comment" size="50"><br><br>
-  <input type="submit" value="Send">
-  <input type="reset" value="Reset">
-  </form>
-</section>
+<br/> </section>
+
+
+
+
 
 
 <script type="text/javascript">
