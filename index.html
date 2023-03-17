@@ -2,13 +2,9 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<link rel="stylesheet" href="css/emojionearea.min.css">
-<script 
-src="https://code.jquery.com/jquery-3.6.4.min.js" 
-integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
-crossorigin="anonymous"></script>
-<script src="js/emojionearea.min.js"></script>
+<link rel="stylesheet" href="emojionearea.min.css">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="emojionearea.min.js"></script>
 <body>
 <div id="menu">
 <li><a href="#about"> About Me</a></li>
@@ -128,7 +124,8 @@ crossorigin="anonymous"></script>
 <br/>
 <h1> <p class="dotted">Give Me A Like</p> </h1>
 <br/>
-אהבתם את העמוד שלי? אשמח שתעשו לי לייק
+<p align="center">
+  אהבתם את העמוד שלי? אשמח שתעשו לי לייק</p>
 <br/>
 <br/>
 <div id="fb-root"></div>
@@ -155,7 +152,7 @@ crossorigin="anonymous"></script>
 <br/>
 <h1> <p class="dotted">Scan My Code</p> </h1>
 <br/>
-<img src=QR.png width=350 height=350></img><br>
+<p align="center"><img src=QR.png width=350 height=350></img><br></p>
 <br/>
 <br/>
 </section>
@@ -216,12 +213,13 @@ crossorigin="anonymous"></script>
   <br/>
   
   <form action="mailto:edenluzon5@gmail.com" method="post" enctype="text/plain">
-    Name:<br>
-    <p><input type="text" name="name" value="please enter your first name"><br></form></p>
-    E-mail:<br>
-    <input type="text" name="mail"><br>
-    Comment:<br>
-    <input type="text" name="comment" size="50"><br><br>
+    <p>Name:</p>
+    <p><input type="text" name="name" value="please enter your first name" size="30"><br></form></p>
+    <p>E-mail:</p>
+    <input type="text" name="mail" value="please enter your mail" size="30"><br>
+    <p>Comment:</p>
+    <textarea id="comment1"></textarea>
+  <script>$(document).ready(function(){$("#comment1").emojioneArea({pickerPosition:"bottom"});})</script>
     <input type="submit" value="Send">
     <input type="reset" value="Reset">
     </form>
