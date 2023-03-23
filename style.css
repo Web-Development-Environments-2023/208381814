@@ -1,52 +1,234 @@
 #menu
-{
+{ 
 	position: fixed;
-	width: 100%;
 	height: 35px;
 	background: white;
+	bottom: 20;
+	width: 100%;
+	align-items: center;
+	display: inline-block;
+	
 }
 
-li {
-	display: inline;
-	float: left;
-	border-right: 1px solid #f0f0f0;
+  #menu li {
+	position: relative;
   }
 
   p {
-	font-family: Tahoma, Verdana, sans-serif;
+	font-family: Calibri;
+	font-size: 32px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
 	}
 
-	p.dotted {border-style: dotted;}
+ p1{
+	font-family: Calibri;
+	font-size: 46px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	}
 
-	h1 {text-align: center;}
+	p1.dotted {
+		border-style: none;
+		color: #DC143C;
+		/* width:100%;
+		background-image: url('love3.jpg'); */
+	}
+	
+	h1 {
+		text-align: center;
+	}
 
   a {
 	display: block;
-	padding: 8px;
-	background-color: #DC143C;
+	padding: 2px;
   }
 
-  ul {
+  #menu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #DC143C;
+	align-items: center;
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	direction: rtl;
+	
   }
-
-  
-  li a {
+ 
+  #menu li a {
 	display: block;
-	color: white;
+	color: black;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
   }
   
   li a:hover {
-	background-color: #111;
+	background-color:pink;
   }
 
-  .active {
-	background-color: #DC143C;
+  img {
+	vertical-align: middle;
   }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+	position: relative;
+	width: 30%;	
+	align: center;
+  }
+  
+  body {
+    background-color: white;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: #DC143C;
+	background-color:pink;
+	font-weight: bold;
+	font-size: 20px;
+	/* border-radius: 0 3px 3px 0; */
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 6px 0 0 6px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color:white;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+  }
+
+  .row{
+	text-align: center;
+  }
+
+  .col{
+	display: inline-block;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+	
+  }
+  
+  .column {
+	float:inline-end;
+	align-items: center;
+	width: 16.66%;
+	display: flex;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+
+  th,td{
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+  }
+
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  th {
+	background-color: rgb(221, 109, 128);
+	color: white;
+  }
+
+ form { max-width:500px; 
+	margin:100px auto;  
+	width: 600px;
+    height: 800px;
+    padding: 50px;
+    border: rgb(106, 178, 238) ;
+	background-color:rgb(99, 166, 243) ;
+    border-radius: 30px; }
+
+input[type=text], input[type=email], select, textarea {
+	width: 100%;
+	height: 50px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 14px;
+	resize: vertical
+}
+/* Style the submit button */
+input[type=submit] {
+	background-color: #0436aa;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 36;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/* Change submit button color on hover */
+input[type=submit]:hover {
+	background-color: #456fa0;
+}
+/* Add the contact form a background color and padding */
+.container {
+	margin: auto;
+	width: 500px;
+	border-radius: 5px;
+	background-color: #a8cce9;
+	padding: 20px;
+}
+
+
